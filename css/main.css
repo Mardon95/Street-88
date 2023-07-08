@@ -1,0 +1,254 @@
+@import url(./fonts.css);
+
+:root {
+   --fm-1: "Roboto";
+   --fm-2: "Raleway";
+   --header-color: #0C0C0C;
+   --nav-color: #060606;
+   --btn-color: #0A7114;
+   --white:#FFFFFF;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+a{
+   text-decoration: none;
+}
+ul{
+   list-style: none;
+}
+
+
+.header {
+    max-width: 100%;
+    background: var(--header-color);
+    margin:  auto;
+}
+
+.header_container {
+    width: 100%;
+    height: 60px;
+    background: var(--header-color);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 680px;
+}
+
+.header_card {
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.header_card-title {
+    font-family: var(--fm-1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white);
+}
+
+.header_card-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    column-gap: 20px;
+}
+
+.header_li {
+   font-family: var(--fm-1);
+    color:var(--white) ;
+    font-size: 17px;
+    font-weight: 400;
+
+}
+
+.header_nav {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--nav-color);
+    border: 1px solid #2F2D2D;
+    column-gap: 420px;
+}
+
+.header_nav-btn {
+    font-family: var(--fm-1);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
+    padding: 10px 18px 9px 18px;
+    background: var(--btn-color);
+    border-radius: 4px;
+    border: 4px solid #06600F;
+    color: var(--white);
+}
+.header_a{
+    font-family: var(--fm-1);
+    color: var(--white);
+    padding: 22px 14px;
+    font-size: 17px;
+    font-weight: 400;
+    transition: .5s;
+
+}
+.header_a:hover{
+    background: #69CF17BF;
+}
+.header_nav-sps {
+    font-family: var(--fm-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    column-gap: 15px;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 1600px;
+    width: 100%;
+    height: 700px;
+    background: url(../img/food-burger-wallpaper-preview\ 1.jpg) no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.wrapper_content {
+    max-width: 1125px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.wrapper_title {
+    color: #69CF17;
+    font-size: 72px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.wrapper_text1 {
+    color: #69CF17;
+    font-size: 40px;
+    font-family: var(--fm-2);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+}
+.wrapper_text2 {
+    max-width: 1125px;
+    width: 100%;
+    height: 72px;
+    color: #FFFFFF;
+    font-size: 21px;
+    font-family: var(--fm-2);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.wrapper_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 590px;
+}
+.card_number {
+    background: rgba(105, 207, 23, 0.50);
+    backdrop-filter: blur(9px);
+    color: #FFF;
+    text-align: right;
+    font-size: 50px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 100;
+    line-height: 25px;
+    padding: 33px 76px;
+}
+.wrapper_card-btn {
+    border-radius: 6px;
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    color: var(--white);
+    text-align: right;
+    font-size: 18px;
+    font-family: var(--fm-2);
+    font-weight: 400;
+    padding: 15px 70px;
+    border: 0;
+}
+.section1 {
+    width: 100%;
+    height: 1171px;
+    background: #393636;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section1_cards {
+    max-width: 1570px;
+    width: 100%;
+    display: grid;
+    grid-area: card;
+    padding-top: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "card card card card"
+        "card card card card";
+    gap: 30px;
+}
+.section1_card {
+    max-width: 370px;
+    width: 100%;
+    height: 524px;
+    background: #0B0B0B;
+    border-radius: 4px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 15px;
+}
+.section1_card-image {
+    width: 338.73px;
+    height: 325px;
+    transition: .5s;
+    background: url(../img/unnamed\ 1.png) no-repeat center center / cover;
+}
+.section1_card-title {
+    color: #FFF;
+    font-family: var(--fm-2);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+}
+.section1_card-text {
+    width: 338.73px;
+    height: 124px;
+    color: #FFF;
+    font-family: var(--fm-2);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
